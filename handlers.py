@@ -7,7 +7,7 @@ from config import PAYMENTS_TOKEN
 
 from keyboards import keyboard
 
-@dp.message_handler(Command('start'))
+@dp.message_handler(Command('/start'))
 async def start(message: Message):
     await bot.send_message(message.chat.id,
                            'Тестируем WebApp',
